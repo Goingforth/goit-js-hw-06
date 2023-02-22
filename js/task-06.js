@@ -2,7 +2,7 @@ const input = document.querySelector("#validation-input");
 const inputLength = Number(input.dataset.length);
 
 const onInputChangeColorBorder = () => {
-  switch (input.value.length) {
+  switch (input.value.length.trime()) {
     case 0:
       input.classList.remove("valid", "invalid");
       break;
