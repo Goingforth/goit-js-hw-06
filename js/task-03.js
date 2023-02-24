@@ -18,7 +18,8 @@ const listImages = document.querySelector(".gallery");
 const itemsFromImages = (images) => {
   return images.map((image) => {
     const newItem = document.createElement("li");
-    const widthImg = window.innerWidth / 3 - 10;
+    const widthImg = window.innerWidth / 3 - 20;
+    console.log(window.innerWidth);
 
     newItem.insertAdjacentHTML(
       "afterbegin",
