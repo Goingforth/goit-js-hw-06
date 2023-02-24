@@ -18,13 +18,14 @@ const listImages = document.querySelector(".gallery");
 const itemsFromImages = (images) => {
   return images.map((image) => {
     const newItem = document.createElement("li");
+    const widthImg = window.innerWidth / 3 - 10;
 
     newItem.insertAdjacentHTML(
       "afterbegin",
-      `<img src="${image.url}" alt="${image.url}">`
+      `<img src="${image.url}" alt="${image.url}" width = "${widthImg}">`
     );
     return newItem;
   });
 };
-
+listImages.classList.add("visual");
 listImages.append(...itemsFromImages(images));
