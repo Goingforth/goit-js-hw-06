@@ -12,7 +12,7 @@ const refs = {
 };
 
 const createBoxes = () => {
-  let amount = Number(refs.number.value);
+  const amount = Number(refs.number.value);
   const newBoxes = [];
   let baseSize = 30;
 
